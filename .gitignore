@@ -1,10 +1,6 @@
 # IntelliJ og lokale arbeidsfiler
 .idea/
 .run/
-!.idea/
-.idea/*
-!.idea/runConfigurations/
-!.idea/runConfigurations/*.xml
 
 # Lokale miljøfiler og hemmeligheter
 .env
@@ -19,6 +15,8 @@ out/
 .next/
 
 # Lokale notater og kundemateriale
+AGENTS.md
+docs/
 *.local
 private/
 kundemateriale/

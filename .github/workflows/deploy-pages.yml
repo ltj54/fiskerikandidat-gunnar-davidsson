@@ -1,0 +1,41 @@
+name: Publiser nettsted
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "site/**"
+      - ".github/workflows/deploy-pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hent nettstedet
+        uses: actions/checkout@v6
+
+      - name: Konfigurer GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Klargjor nettstedfilene
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+      - name: Publiser
+        id: deployment
+        uses: actions/deploy-pages@v4
