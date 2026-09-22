@@ -1,0 +1,25 @@
+# IntelliJ og lokale arbeidsfiler
+.idea/
+.run/
+
+# Lokale miljøfiler og hemmeligheter
+.env
+.env.*
+!.env.example
+
+# Avhengigheter og byggutdata
+node_modules/
+dist/
+build/
+out/
+.next/
+
+# Lokale notater og kundemateriale
+*.local
+private/
+kundemateriale/
+fakturagrunnlag/
+
+# Operativsystemfiler
+.DS_Store
+Thumbs.db
