@@ -1,6 +1,10 @@
 # IntelliJ og lokale arbeidsfiler
 .idea/
 .run/
+!.idea/
+.idea/*
+!.idea/runConfigurations/
+!.idea/runConfigurations/*.xml
 
 # Lokale miljøfiler og hemmeligheter
 .env
