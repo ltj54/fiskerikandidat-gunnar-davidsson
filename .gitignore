@@ -8,11 +8,13 @@
 !.env.example
 
 # Avhengigheter og byggutdata
+.venv/
 node_modules/
 dist/
 build/
 out/
 .next/
+*.tsbuildinfo
 
 # Lokale notater og kundemateriale
 AGENTS.md

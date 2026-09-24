@@ -1,12 +1,6 @@
 name: Publiser nettsted
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - "site/**"
-      - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 
 permissions:
@@ -28,13 +22,28 @@ jobs:
       - name: Hent nettstedet
         uses: actions/checkout@v6
 
+      - name: Konfigurer Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Installer avhengigheter
+        run: npm ci
+
+      - name: Kontroller koden
+        run: npm run lint
+
+      - name: Bygg nettstedet
+        run: npm run build
+
       - name: Konfigurer GitHub Pages
         uses: actions/configure-pages@v5
 
       - name: Klargjor nettstedfilene
         uses: actions/upload-pages-artifact@v4
         with:
-          path: site
+          path: out
 
       - name: Publiser
         id: deployment
