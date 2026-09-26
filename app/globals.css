@@ -111,7 +111,16 @@ h2 { font-size: clamp(38px, 4.5vw, 60px); }
 .about-section { background: var(--cream); }
 .about-grid { display: grid; grid-template-columns: .92fr 1.08fr; gap: 100px; align-items: center; padding: 120px 0; }
 .about-image { position: relative; min-height: 430px; overflow: hidden; background: var(--sea-dark); }
-.about-image > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 59% center; }
+.about-image > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 59% center;
+  transform: scale(1.22);
+  transform-origin: 59% 70%;
+}
 .about-image::after { content: ""; position: absolute; inset: 55% 0 0; background: linear-gradient(transparent, rgba(7, 30, 36, .65)); }
 .image-label { position: absolute; z-index: 1; right: 24px; bottom: 24px; color: rgba(255,255,255,.9); font-size: 11px; text-transform: uppercase; letter-spacing: .12em; }
 .about-copy { max-width: 530px; }
