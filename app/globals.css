@@ -87,16 +87,20 @@ h1 { max-width: 610px; font-size: clamp(44px, 5vw, 72px); }
 .intro-band { background: var(--sea-dark); color: var(--paper); }
 .intro-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 80px; padding: 54px 0 60px; }
 .intro-band .section-kicker { color: var(--sand); }
+.intro-copy { display: grid; gap: 22px; }
 .intro-text { max-width: 700px; margin: 0; color: #dce8e3; font-family: var(--font-serif), Georgia, serif; font-size: clamp(24px, 3vw, 36px); line-height: 1.2; }
+.intro-copy > p:not(.intro-text) { max-width: 700px; margin: 0; color: #bfcfca; font-size: 15px; }
 
 .content-section { padding: 125px 0; }
 .section-heading { max-width: 620px; }
 h2 { font-size: clamp(38px, 4.5vw, 60px); }
-.service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 60px; background: var(--line); border: 1px solid var(--line); }
+.service-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; margin-top: 60px; background: var(--line); border: 1px solid var(--line); }
 .service-card { min-height: 295px; display: flex; flex-direction: column; justify-content: center; padding: 30px; background: var(--paper); }
 .service-card-accent { color: var(--paper); background: var(--sea); }
-.service-card h3 { max-width: 230px; font-size: 23px; }
-.service-card p { max-width: 270px; margin: 16px 0 0; color: var(--muted); font-size: 14px; }
+.service-card-featured { grid-column: 1 / -1; min-height: 260px; }
+.service-card h3 { max-width: 360px; font-size: 23px; }
+.service-card p { max-width: 470px; margin: 16px 0 0; color: var(--muted); font-size: 14px; }
+.service-card-featured h3, .service-card-featured p { max-width: 760px; }
 .service-card-accent p { color: #d6e5e1; }
 .field-gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 72px; }
 .field-image { position: relative; min-height: 300px; margin: 0; overflow: hidden; background: var(--sea-dark); }
@@ -179,6 +183,7 @@ h2 { font-size: clamp(38px, 4.5vw, 60px); }
   .intro-grid { padding: 42px 0 48px; }
   .content-section, .contact-section { padding: 80px 0; }
   .service-grid { grid-template-columns: 1fr; }
+  .service-card-featured { grid-column: auto; }
   .service-card { min-height: 230px; }
   .field-gallery { grid-template-columns: 1fr; margin-top: 48px; }
   .field-image, .field-image-wide { min-height: 320px; }
