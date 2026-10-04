@@ -124,14 +124,18 @@ export default function Home() {
               <p>
                 Havbruksfondet ble etablert i 2017 for å fordele en andel av
                 statens inntekter fra havbruksnæringen til fylkeskommuner og
-                kommuner. Gunnar har siden starten utarbeidet prognoser for
-                kommuner og fylker. Beregningssystemet er til dels komplisert
-                og uoversiktlig før utbetalingene finner sted, og midlene
-                utbetales sent i regnskapsåret. Han har også vært sentral i det
-                politiske arbeidet med å forbedre rammebetingelsene rundt
-                fordelingen og sikre kommunenes og fylkeskommunenes inntekter
-                fra fondet.
+                kommuner.
               </p>
+              <ul className="service-points">
+                <li>Prognoser for kommuner og fylkeskommuner</li>
+                <li>
+                  Oversikt over et komplisert beregningssystem og sene
+                  utbetalinger
+                </li>
+                <li>
+                  Arbeid med rammebetingelser og lokale inntekter fra fondet
+                </li>
+              </ul>
             </article>
             <article className="service-card">
               <h3>Forvaltning og rammevilkår</h3>
@@ -159,13 +163,16 @@ export default function Home() {
             <article className="service-card">
               <h3>Besøk og ekskursjoner til Island</h3>
               <p>
-                Som født og oppvokst på Island, med god kunnskap om næring og
-                samfunn og mange års samarbeid med islandske myndigheter og
-                virksomheter, har Gunnar organisert og guidet en rekke besøk og
-                fagekskursjoner. Temaene spenner fra reiseliv, landbruk, fiskeri
-                og oppdrett til forskning, utvikling og kompetanse. OU-turer og
-                blåturer inngår også i tilbudet.
+                Gunnar er født og oppvokst på Island og har mange års erfaring
+                med islandske myndigheter og virksomheter.
               </p>
+              <ul className="service-points">
+                <li>Planlegging og guiding av fagbesøk og ekskursjoner</li>
+                <li>
+                  Reiseliv, landbruk, fiskeri, oppdrett, forskning og utvikling
+                </li>
+                <li>OU-turer og blåturer</li>
+              </ul>
             </article>
           </div>
 
@@ -242,19 +249,21 @@ export default function Home() {
             </div>
             <div className="about-copy">
               <p className="section-kicker">Om Gunnar</p>
-              <h2>
-                Fiskerifaglig utdanning og erfaring fra Island og Norge.
+              <h2>Fiskerifaglig erfaring fra Island og Norge.</h2>
+              <p className="about-lead">
                 Omfattende erfaring fra offentlig forvaltning.
-              </h2>
+              </p>
               <p>
-                Gjennom sitt arbeid som avdelings- og seksjonsleder,
-                assisterende næringssjef i Troms fylkeskommune og avdelingsleder
-                i Troms og Finnmark fylkeskommune har han opparbeidet særlig
-                kunnskap om Havbruksfondet, tildeling av havbrukslokaliteter,
-                arealspørsmål og samspillet mellom næringsliv og offentlig
-                forvaltning, spesielt i Nord-Norge. Han har også deltatt aktivt
-                i den offentlige debatten om rammevilkår innen
-                havbruksnæringen.
+                Gunnar har vært avdelings- og seksjonsleder og assisterende
+                næringssjef i Troms fylkeskommune, samt avdelingsleder i Troms
+                og Finnmark fylkeskommune.
+              </p>
+              <p>
+                Arbeidet har gitt ham særlig kunnskap om Havbruksfondet,
+                tildeling av havbrukslokaliteter, arealspørsmål og samspillet
+                mellom næringsliv og offentlig forvaltning i Nord-Norge. Han
+                har også deltatt aktivt i den offentlige debatten om
+                havbruksnæringens rammevilkår.
               </p>
               <p>
                 Gjennom enkeltpersonforetaket Fiskerikandidat Gunnar Davidsson
@@ -302,7 +311,7 @@ export default function Home() {
             <div>
               <p className="section-kicker">Utvalgte faglige omtaler</p>
               <h2 id="insight-title">
-                Beregninger som setter lokale ringvirkninger i perspektiv.
+                Beregninger med betydning for kystkommunene.
               </h2>
             </div>
             <p>
