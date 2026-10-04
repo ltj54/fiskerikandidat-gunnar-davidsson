@@ -21,7 +21,11 @@ export const metadata: Metadata = {
   description:
     "Strategisk rådgivning innen fiskeri, havbruk og kystforvaltning ved Fiskerikandidat Gunnar Davidsson.",
   icons: {
-    icon: `${basePath}/images/logo-gunnar-symbol.webp`,
+    icon: {
+      url: `${basePath}/favicon.svg?v=2`,
+      type: "image/svg+xml",
+    },
+    shortcut: `${basePath}/favicon.svg?v=2`,
   },
 };
 

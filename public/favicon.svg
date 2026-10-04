@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#123f4a"/>
+  <rect x="3" y="3" width="58" height="58" rx="11" fill="none" stroke="#d7b98b" stroke-width="2"/>
+  <text
+    x="32"
+    y="41"
+    fill="#fbfaf6"
+    font-family="Arial, sans-serif"
+    font-size="27"
+    font-weight="700"
+    letter-spacing="-1"
+    text-anchor="middle"
+  >GD</text>
+</svg>
