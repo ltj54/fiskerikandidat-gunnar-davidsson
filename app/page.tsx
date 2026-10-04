@@ -81,20 +81,34 @@ export default function Home() {
               <p className="intro-text">
                 Gunnar Davidsson er utdannet fiskerikandidat, MSc i fiskeri- og
                 havbruksvitenskap ved UiT Norges arktiske universitet,
-                tidligere Universitetet i Tromsø. Han har lang erfaring
-                primært fra offentlig forvaltning, virkemiddelforvaltning,
-                akvakultur- og vannforvaltning samt regional næringsutvikling
-                i Nord-Norge. Gunnar har også bakgrunn fra bankvirksomhet,
-                fiskeeksport og internasjonalt samarbeid innen EU/EØS.
+                tidligere Universitetet i Tromsø.
               </p>
-              <p>
-                Gunnar har ledet akvakulturtildeling i Troms fylkeskommune i en
-                årrekke og hatt ansvar for ulike fagområder innen kystrelatert
-                virksomhet og infrastruktur. Han har hatt ansvar for oppfølging
-                av det statlige Havbruksfondet, som fordeler inntekter fra
-                havbruksnæringen til stat, fylker og kommuner, og har bidratt
-                med offentlige prognoser og beregninger knyttet til dette.
-              </p>
+              <div className="background-points">
+                <div>
+                  <h3>Forvaltning og utvikling</h3>
+                  <p>
+                    Han har lang erfaring primært fra offentlig forvaltning,
+                    virkemiddelforvaltning, akvakultur- og vannforvaltning samt
+                    regional næringsutvikling i Nord-Norge.
+                  </p>
+                </div>
+                <div>
+                  <h3>Næring og internasjonalt arbeid</h3>
+                  <p>
+                    Gunnar har også bakgrunn fra bankvirksomhet,
+                    fiskeeksport og internasjonalt samarbeid innen EU/EØS.
+                  </p>
+                </div>
+                <div>
+                  <h3>Ledelse og Havbruksfondet</h3>
+                  <p>
+                    Gunnar har ledet akvakulturtildeling i Troms fylkeskommune
+                    i en årrekke og hatt ansvar for kystrelatert virksomhet og
+                    infrastruktur. Han har også fulgt opp Havbruksfondet og
+                    bidratt med offentlige prognoser og beregninger.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
