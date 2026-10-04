@@ -1,0 +1,3 @@
+[tui]
+alternate_screen = "never"
+raw_output_mode = true
