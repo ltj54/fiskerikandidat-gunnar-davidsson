@@ -1,15 +1,13 @@
 "use client";
 
-import { FormEvent, MouseEvent, useRef, useState } from "react";
+import { FormEvent, MouseEvent, useRef } from "react";
 
-const recipient = "";
+const recipient = "gunnar@davidsson.no";
 
 export default function ContactDialog() {
   const dialogRef = useRef<HTMLDialogElement>(null);
-  const [status, setStatus] = useState("");
 
   function openDialog() {
-    setStatus("");
     dialogRef.current?.showModal();
   }
 
@@ -25,11 +23,6 @@ export default function ContactDialog() {
 
   function submitForm(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-
-    if (!recipient) {
-      setStatus("Gunnars e-postadresse må legges inn før skjemaet kan brukes.");
-      return;
-    }
 
     const formData = new FormData(event.currentTarget);
     const name = String(formData.get("name") ?? "").trim();
@@ -73,9 +66,6 @@ export default function ContactDialog() {
             Fyll ut feltene, så klargjøres meldingen i e-postprogrammet ditt.
             Opplysningene lagres ikke på nettsiden.
           </p>
-          <p className="pending-recipient">
-            [Mottakeradresse må bekreftes før aktivering]
-          </p>
           <form className="contact-form" onSubmit={submitForm}>
             <label htmlFor="contact-name">Navn</label>
             <input
@@ -106,9 +96,6 @@ export default function ContactDialog() {
             <button className="button button-dark" type="submit">
               Opprett e-post <span aria-hidden="true">↗</span>
             </button>
-            <p className="form-status" role="status" aria-live="polite">
-              {status}
-            </p>
           </form>
         </div>
       </dialog>

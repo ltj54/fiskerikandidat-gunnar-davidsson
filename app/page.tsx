@@ -422,15 +422,7 @@ export default function Home() {
               <ContactDialog />
             </div>
             <div className="contact-details">
-              <span className="pending-detail">
-                [E-postadresse – må bekreftes]
-              </span>
-              <span className="pending-detail">
-                [Telefonnummer – må bekreftes]
-              </span>
-              <span className="pending-detail">
-                [Forretningsadresse – må bekreftes]
-              </span>
+              <a href="mailto:gunnar@davidsson.no">gunnar@davidsson.no</a>
             </div>
           </div>
         </section>

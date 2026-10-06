@@ -15,11 +15,16 @@ const sourceSerif = Source_Serif_4({
 });
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Fiskerikandidat Gunnar Davidsson",
   description:
     "Strategisk rådgivning innen fiskeri, havbruk og kystforvaltning ved Fiskerikandidat Gunnar Davidsson.",
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: {
       url: `${basePath}/favicon.svg?v=2`,
