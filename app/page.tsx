@@ -423,6 +423,7 @@ export default function Home() {
             </div>
             <div className="contact-details">
               <a href="mailto:gunnar@davidsson.no">gunnar@davidsson.no</a>
+              <a href="tel:+4791676990">+47 916 76 990</a>
             </div>
           </div>
         </section>
